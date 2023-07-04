@@ -5,6 +5,9 @@ date: today
 toc: true
 toc-expand: 3
 fig-align: center
+format:
+  html:
+    embed-resources: true
 ---
 
 ```{css, echo = FALSE}
