@@ -1,0 +1,43 @@
+# This configuration file controls the behavior of the auto-player
+# when 'main.py' is run. The most important key is 'segments', which is
+# list of handler configurations (documented in 'config.py'). A given 
+# configuration will be used until the move handler releases, at which
+# point the next handler set in the list will be run. If 'reset' is true,
+# then the auto-player will reset the game before running the next handler
+# set.
+
+---
+manual: false   # If a manual handler is used, this must be set to true
+log: true       # If true, game data will be logged in 'data.db'
+cycle: true     # If true, the segments list will be looped
+ 
+segments:       # Each segment must have a move, fight, inventory, and skills handler
+  -
+    move:
+      name: foreman
+    fight:
+      name: simple melee
+      flee: 0.1
+    inventory:
+      name: simple heal
+    skills:
+      Rohane:
+        - 
+          skill: Innate Melee Haste
+          points: 15
+    reset: true
+  -
+    move:
+      name: Zombom
+    fight:
+      name: simple melee
+      flee: 0.1
+    inventory:
+      name: simple heal
+    skills:
+      Rohane:
+        - 
+          skill: Innate Melee Haste
+          points: 15
+    reset: true
+...
