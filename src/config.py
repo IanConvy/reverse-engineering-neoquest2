@@ -38,7 +38,7 @@ class Schedule():
         if self.handler_index >= len(self.handlers): 
             if self.cycle:
                 self.handler_index = 0
-                self.handlers = [self.create_handler(config) for config in self.config_dict["segments"]]
+                self.handlers = [self._create_handler(config) for config in self.config_dict["segments"]]
                 (handler, state) = self.get_next_handler()
             else:
                 handler = None
