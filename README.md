@@ -17,7 +17,7 @@ for those wanting to develop a deeper understanding of the game, it also raises 
 To probe the inner workings of NeoQuest II, I have written a Python-based auto-player for it using Selenium. This program
 can operate autonomously, playing through the game and collecting huge quantities of data involving movement, combat, and loot mechanics.
 To extract useful information from this raw data, I have written a set of R scripts to clean and transform it in search of statistical
-patterns. This work is still in its early stages, but I have assembled my current methods and conclusions in `analysis/walkthrough.html`, which
+patterns. This work is still in its early stages, but I have assembled my current methods and conclusions in `walkthrough.html`, which
 outlines some mechanics that I have likely solved and others that still elude me.
 
 Although the code in this repository is not intended as a fully-fledged application or library, it is documented and can be easily run in an
