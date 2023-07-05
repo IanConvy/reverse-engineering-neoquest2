@@ -11,9 +11,10 @@ format:
 ---
 
 ```{css, echo = FALSE}
-  * {
+p, figcaption {
   text-align: justify
-  }
+}
+ 
 ```
 
 # Introduction
@@ -1060,7 +1061,7 @@ ggplot(
   scale_x_continuous(breaks = seq(0, 100, 2)) + 
   facet_wrap(
     ~factor(enemy_level, levels = c(1, 2, 3, 4), 
-            labels = c("Enemy level 1", "Enemt level 2", "Enemy level 3", "Enemy level 4")),
+            labels = c("Enemy level 1", "Enemy level 2", "Enemy level 3", "Enemy level 4")),
     scales = "free") + 
   labs(
     title = "Gold Distributions",
